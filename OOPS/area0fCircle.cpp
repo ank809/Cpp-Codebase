@@ -14,8 +14,8 @@ public:
 };
 int main(){
     Circle circle;
-    cout<<"Enter value of radius";
-    cin>>circle.r; 
+    cout<<"Enter value of radius "<<endl;
+    circle.r=2; 
     circle.area();
 
 }
