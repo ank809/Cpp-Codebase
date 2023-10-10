@@ -5,8 +5,12 @@ class Student{
     public:
     int mark1, mark2, mark3, mark4, mark5;
     void getData(){
-        cout<<"Enter marks of student:";
-        cin>>mark1>>mark2>>mark3>>mark4>>mark5;
+        cout<<"Enter the  000marks of student:";
+        cin>>mark1;
+        cin>>mark2;
+        cin>>mark3;
+        cin>>mark4;
+        cin>>mark5;
     }
 
     void putData(){

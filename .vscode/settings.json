@@ -3,11 +3,19 @@
         "*.html": "html",
         "iostream": "cpp",
         "ostream": "cpp",
-        "istream": "cpp"
+        "istream": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "xhash": "cpp",
+        "xstring": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "cSpell.words": [
         "ankita",
+        "commondivisor",
+        "deno",
         "regno"
     ]
 }
