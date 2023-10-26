@@ -49,7 +49,7 @@ class Node {
 int main(){
     Node* node= new Node();
     node->insert(19);
-     node->insert(10);
+    node->insert(10);
     node->insert(58);
     node->insert(1);
     node->insert(98);

@@ -41,7 +41,7 @@ class Queue{
 };
 
 int main(){
-    Queue * queue= new Queue(5);
+    Queue * queue= new Queue(5);Dyna
     queue->insert(8);
     queue->insert(78);
     queue->insert(7);

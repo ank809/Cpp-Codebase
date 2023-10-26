@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.html": "html",
+        "*.kt": "kotlin",
         "iostream": "cpp",
         "ostream": "cpp",
         "istream": "cpp",
@@ -9,7 +10,8 @@
         "unordered_map": "cpp",
         "vector": "cpp",
         "xhash": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "queue": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "cSpell.words": [
@@ -17,7 +19,9 @@
         "commondivisor",
         "deno",
         "inorder",
+        "maxheap",
         "regno",
+        "Thakur",
         "towerofhanoi"
     ]
 }
