@@ -16,8 +16,10 @@
     "C_Cpp.errorSquiggles": "disabled",
     "cSpell.words": [
         "ankita",
+        "buildheap",
         "commondivisor",
         "deno",
+        "heapify",
         "inorder",
         "maxheap",
         "regno",
