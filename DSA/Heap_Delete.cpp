@@ -1,48 +1,61 @@
-#include<iostream>
+// You are using GCC
+#include <iostream>
 using namespace std;
 
-void heapify(int arr[], int n, int i){
-    int s=i;
-    int l= 2*i+1;
-    int r= 2*i+2;
-    if(l<n && arr[l]<arr[s]){
-        s=l;
-    }
-    if(r<n && arr[r]<arr[s]){
-        s=r;
-    }
-    if(s!=i){
-        int temp= arr[s];
-        arr[s]=arr[i];
-        arr[i]=temp;
-        heapify(arr, n, s);
-    }
+void heapify(int arr[], int n, int i)
+{
+   int largest=i;
+   int l= 2*i+1;
+   int r= 2*i+2;
+   if(l<n && arr[l]>arr[largest]){
+       largest=l;
+   }
+   if(r<n && arr[r]>arr[largest]){
+       largest=r;
+   }
+   if(largest!=i){
+       int temp=arr[i];
+       arr[i]=arr[largest];
+       arr[largest]=temp;
+       heapify(arr, n, largest);
+   }
+   
 }
-void buildheap(int arr[], int n){
-    for(int i= n/2-1; i>=0; i--){
+
+void buildMaxHeap(int arr[], int n) {
+    for (int i = n / 2 - 1; i >= 0; i--) {
         heapify(arr, n, i);
     }
 }
-void deleteHeap(int arr[], int n){
-    arr[0]=arr[n-1];
-    n--;
-    heapify(arr, n, 0);
+
+void deleteMax(int arr[], int& n) 
+{
+   int r= arr[0];
+   arr[0]=arr[n-1];
+   n--;
+   heapify(arr, n, 0);
 }
 
-int main(){
+void displayHeap(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+}
+
+int main() {
     int n;
-    cin>>n;
+    cin >> n;
     int arr[n];
-    for(int i=0; i<n; i++){
-        cin>>arr[i];
+
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
     }
-    buildheap(arr, n);
-    for(int i=0; i<n; i++){
-        cout<<arr[i];
-    }
-    cout<<endl;
-    deleteHeap(arr, n);
-     for(int i=0; i<n; i++){
-        cout<<arr[i];
-    }
+
+    buildMaxHeap(arr, n);
+
+    deleteMax(arr, n);
+
+    displayHeap(arr, n);
+
+    return 0;
 }
