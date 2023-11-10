@@ -1,0 +1,29 @@
+{
+    "files.associations": {
+        "*.html": "html",
+        "*.kt": "kotlin",
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "istream": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "xhash": "cpp",
+        "xstring": "cpp",
+        "queue": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled",
+    "cSpell.words": [
+        "ankita",
+        "buildheap",
+        "commondivisor",
+        "deno",
+        "heapify",
+        "inorder",
+        "maxheap",
+        "regno",
+        "Thakur",
+        "towerofhanoi"
+    ]
+}
