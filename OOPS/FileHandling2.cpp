@@ -13,6 +13,6 @@ int main(){
     ifstream iff("result.txt");
     iff>>s;
     cout<<s;
-    iff.close();d,
+    iff.close();
 
 }

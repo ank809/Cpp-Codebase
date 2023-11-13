@@ -24,6 +24,8 @@ public:
     void setValues(int a, int b) {
         A::getM(a);
         B::getN(b);
+        getM(a);
+        getN(b);
     }
 
     void display() {
