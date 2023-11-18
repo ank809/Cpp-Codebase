@@ -4,8 +4,8 @@ class Node{
     public:
     int val;
     Node*next;
-    Node * prev;
-    Node *head;
+    Node* prev;
+    Node* head;
     Node(){
         head=NULL;
     }
@@ -15,7 +15,7 @@ class Node{
     }
 
     void insertAtFirst(int value){
-        Node * node= new Node(value);
+        Node* node= new Node(value);
         node->prev= NULL;
         if(head!=NULL){
             node->next=head;

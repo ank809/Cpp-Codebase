@@ -4,8 +4,8 @@ void quicksort(int arr[], int low, int high){
     if(low>=high){
         return;
     }
-    int s=0;
-    int e=high-1;
+    int s=low;
+    int e=high;
     int pivot= s+(e-s)/2;
 
     while(s<=e){

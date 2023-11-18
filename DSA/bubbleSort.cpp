@@ -8,7 +8,7 @@ int main(){
     for(int i=0; i<n; i++){
         cin>>arr[i];
     }
-    // sorting array using bubble sort in aascending order
+    // sorting array using bubble sort in ascending order
     for(int i=0; i<n; i++){
         for ( int j=1; j<n; j++){
             if(arr[j]<arr[j-1]){
